@@ -1,0 +1,82 @@
+################################# Default configuration ###################
+# provide your domain here
+baseURL = "https://examplesite.com/"
+# theme
+theme = "dot-hugo"
+# site title
+title = "Knowledge Base"
+# disable language
+disableLanguages = []
+# google analytics
+googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
+# unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+
+############################# Default Parameters ##########################
+[params]
+# logo is for all page
+logo = ""
+# logo white is for homepage logo, you can use colorful logo too...
+logo_white = ""
+# when logo is empty, it will shown your site title
+
+# OpenGraph / Twitter Card metadata
+description = "This is meta description"
+author = "Themefisher"
+image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
+
+# customize color
+primary_color = "#02007e"
+body_color = "#f9f9f9"
+text_color = "#636363"
+text_color_dark = "#242738"
+white_color = "#ffffff"
+light_color = "#f8f9fa"
+
+# font family
+font_family = "lato" # Choose font family from : https://fonts.google.com/
+
+# contact form action
+contact_form_action = "#" # contact form works with : https://formspree.io
+
+
+############################## social links ##############################
+[[params.social]]
+icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
+name = "Twitter"
+link = "https://twitter.com/golang"
+  
+[[params.social]]
+icon = "ti-github" # themify icon pack : https://themify.me/themify-icons
+name = "Github"
+link = "https://github.com/Luthfiaed"
+
+################################ English Language ######################
+[Languages.en]
+languageName = "English"
+languageCode = "en-us"
+weight = 1
+copyright = "© 2021 Luthfia. Theme by [Gethugothemes](https://gethugothemes.com/)"
+
+# banner
+[Languages.en.params.banner]
+title = "Knowledge Base"
+subtitle = "Documentation and related articles"
+bg_image = "images/banner.jpg"
+placeholder = "Search"
+
+################################### Indonesian Language ######################
+[Languages.id]
+languageName = "Bahasa Indonesia"
+languageCode = "id"
+weight = 2
+copyright = "© 2020 Luthfia. Tema oleh [Gethugothemes](https://gethugothemes.com/)"
+
+# banner
+[Languages.id.params.banner]
+title = "Dokumentasi dan Panduan"
+subtitle = "Dokumentasi dan artikel pendukung lainnya"
+bg_image = "images/banner.jpg"
+placeholder = "Cari"
